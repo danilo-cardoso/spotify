@@ -1,0 +1,46 @@
+.cabecalho
+{
+  position: fixed;
+  width: 19rem;
+}
+
+.navbar
+{
+  background-color: var(--bg-color-base);
+  border-radius: 0.5rem;
+  padding: 1.5rem .75rem 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.img-link
+{
+  padding: 0 .75rem;
+}
+
+.navbar-img
+{
+  width: 4.875rem;
+  height: 1.5rem;
+}
+
+.navbar-item
+{
+  padding: .25rem .75rem;
+}
+
+.item-link
+{
+  padding: .5rem 0;
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.nav-title
+{
+  font-weight: var(--font-bold);
+  line-height: 1.5rem;
+
+}
