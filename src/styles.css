@@ -3,12 +3,12 @@
 
 :root
 {
-  --bg-color: #000;
-  --bg-color-base: #121212;
-  --bg-color-subbase: #242424;
-  --text-color-base: #FFFFFF;
-  --text-color-subbase: #A7A7A7;
-  --font-family: 'DM Sans', sans-serif;
+  --bg-color: #2D3250;
+  --bg-color-base: #424769;
+  --bg-color-subbase: #7077A1;
+  --text-color-base: #F6B17A;
+  --text-color-subbase: #F5C39F;
+  --font-family: 'Comfortaa', sans-serif;
   --font-bold: 700;
   --font-medium: 500;
   --font-regular: 400;
