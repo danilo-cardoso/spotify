@@ -1,4 +1,4 @@
-.biblioteca
+.library
 {
   margin-top: 0.5rem;
   padding: 0.75rem 0.5rem 1.75rem 0.5rem;
@@ -6,7 +6,7 @@
   border-radius: .5rem;
 }
 
-.biblioteca-titulo
+.library__title
 {
  display: flex;
  justify-content: space-between;
@@ -14,22 +14,30 @@
  font-weight: var(--font-bold);
 }
 
-.titulo-link
+.library__title__link
 {
   display: flex;
   gap: 0.75rem;
 }
 
-.biblioteca-botoes
+.library__title__link:hover,
+.library__title__link:hover > span i,
+.library__title__add:hover > span i
+{
+  transition: color, 1s, ease-in-out, .5s;
+  color: var(--text-color-base);
+}
+
+.library__content
 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.5rem 0;
-  line-height: 2rem;
+  line-height: 1.65rem;
 }
 
-.biblioteca-botao
+.library__content__button
 {
   margin: 0.5rem 0;
   padding: 1rem 1rem;
@@ -40,31 +48,45 @@
   gap: 1rem;
 }
 
-.biblioteca-botao h2,
-.biblioteca-botao p
+.library__content__button h2,
+.library__content__button p
 {
   color: var(--text-color-base);
   font-weight: var(--font-bold);
 }
 
-.biblioteca-botao p
+.library__content__button p
 {
   font-size: 12px;
 }
 
-.biblioteca-botao button
+.library__content__button button
 {
+  font-size: 0.75rem;
+  color: var(--bg-color-base);
+  font-family: var(--font-family);
+  font-weight: var(--font-bold);
+  background-color: var(--text-color-base);
   width: -moz-fit-content;
   width: fit-content;
-  background-color: var(--text-color-base);
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 9999px;
-  color: var(--bg-color-base);
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: var(--font-bold);
-  font-size: 12px;
-  line-height: 1.5rem;
   border: none;
+  cursor: pointer;
+}
+
+.library__content__button button:hover,
+.legal-info button:hover
+{
+  transform: scale(105%);
+  transition: all, 1s, ease-in, 0.5s;
+}
+
+.library__content__button button:not(:hover),
+.legal-info button:not(:hover)
+{
+  transform: scale(100%);
+  transition: all, 1s, ease-out, 0.5s;
 }
 
 .legal-info
@@ -77,10 +99,10 @@
   font-size: 11px;
   color: var(--text-color-subbase);
   margin-right: 10px;
-  line-height: 1.25rem;
+  line-height: 1rem;
 }
 
-.legal-list
+.legal-info__list
 {
   display: flex;
   flex-wrap: wrap;
@@ -89,16 +111,22 @@
 
 .legal-info button
 {
-  font-family: 'Comfortaa', sans-serif;
+  color: var(--text-color-base);
+  font-family: var(--font-family);
   font-weight: var(--font-bold);
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  background-color: var(--bg-color-base);
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.25rem 1rem;
-  background-color: var(--bg-color-base);
-  color: var(--text-color-base);
-  border: solid 1px var(--text-color-base);
-  line-height: 1.5rem;
+  border: solid 1px var(--text-color-subbase);
   border-radius: 9999px;
+  padding: 0.25rem 1rem;
   margin-top: 1rem;
-  font-size: 11px;
+  cursor: pointer;
+}
+
+.legal-info button:hover
+{
+  border-color: var(--text-color-base);
 }

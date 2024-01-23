@@ -1,8 +1,8 @@
-.cabecalho
+.header
 {
   position: fixed;
   top: 0.5rem;
-  bottom: 0;
+  bottom: 5.25rem;
   width: 19rem;
   display:flex;
   flex-direction: column;
@@ -18,24 +18,24 @@
   gap: .5rem;
 }
 
-.img-link
+.navbar__img__link
 {
   padding: 0 .75rem;
 }
 
-.navbar-img
+.navbar__img
 {
   width: 4.875rem;
   height: 1.5rem;
   filter: brightness(0) saturate(100%) invert(96%) sepia(91%) saturate(6659%) hue-rotate(302deg) brightness(95%) contrast(103%);
 }
 
-.navbar-item
+.navbar__list__item
 {
   padding: .25rem .75rem;
 }
 
-.item-link
+.list__item__link
 {
   padding: .5rem 0;
   display: flex;
@@ -43,7 +43,14 @@
   gap: 1rem;
 }
 
-.nav-title
+.list__item__link:hover > span,
+.list__item__link:hover > span i
+{
+  transition: color, 1s, ease-in-out, 0.5s;
+  color: var(--text-color-base);
+}
+
+.list__item__title
 {
   font-weight: var(--font-bold);
   line-height: 1.5rem;

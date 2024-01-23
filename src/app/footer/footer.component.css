@@ -1,0 +1,48 @@
+.footer
+{
+  position: fixed;
+  bottom: .5rem;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(90deg, #7AF6B1, #B17AF6);
+  padding: 1.5rem 0 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__content__title,
+.footer__content__text
+{
+  color: #000;
+  font-weight: var(--font-bold);
+}
+
+.footer__content__title
+{
+  font-size: .9rem;
+}
+
+.footer__button
+{
+  border: none;
+  border-radius: 9999px;
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  color: #000;
+  font-weight: var(--font-bold);
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.footer__button:hover
+{
+  transform: scale(105%);
+  transition: all, 1s, ease-in, .5s;
+}
+
+.footer__button:not(:hover)
+{
+  transform: scale(100%);
+  transition: all, 1s, ease-out, .5s;
+}
