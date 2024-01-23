@@ -24,6 +24,15 @@
   color: var(--text-color-base);
 }
 
+.library__title__add  span {
+  padding: 0.3rem;
+}
+
+.library__title__add span:hover {
+  border-radius: 100%;
+  background-color: var(--bg-color-subbase);
+}
+
 .library__content {
   display: flex;
   flex-direction: column;
