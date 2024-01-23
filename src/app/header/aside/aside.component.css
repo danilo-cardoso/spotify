@@ -1,35 +1,30 @@
-.library
-{
+.library {
   margin-top: 0.5rem;
   padding: 0.75rem 0.5rem 1.75rem 0.5rem;
   background-color: var(--bg-color-base);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-.library__title
-{
- display: flex;
- justify-content: space-between;
- padding: 0.5rem 1rem;
- font-weight: var(--font-bold);
+.library__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-weight: var(--font-bold);
 }
 
-.library__title__link
-{
+.library__title__link {
   display: flex;
   gap: 0.75rem;
 }
 
 .library__title__link:hover,
 .library__title__link:hover > span i,
-.library__title__add:hover > span i
-{
-  transition: color, 1s, ease-in-out, .5s;
+.library__title__add:hover > span i {
+  transition: color, 1s, ease-in-out, 0.5s;
   color: var(--text-color-base);
 }
 
-.library__content
-{
+.library__content {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -37,8 +32,7 @@
   line-height: 1.65rem;
 }
 
-.library__content__button
-{
+.library__content__button {
   margin: 0.5rem 0;
   padding: 1rem 1rem;
   background-color: var(--bg-color-subbase);
@@ -49,19 +43,16 @@
 }
 
 .library__content__button h2,
-.library__content__button p
-{
+.library__content__button p {
   color: var(--text-color-base);
   font-weight: var(--font-bold);
 }
 
-.library__content__button p
-{
+.library__content__button p {
   font-size: 12px;
 }
 
-.library__content__button button
-{
+.library__content__button button {
   font-size: 0.75rem;
   color: var(--bg-color-base);
   font-family: var(--font-family);
@@ -76,41 +67,35 @@
 }
 
 .library__content__button button:hover,
-.legal-info button:hover
-{
+.legal-info button:hover {
   transform: scale(105%);
   transition: all, 1s, ease-in, 0.5s;
 }
 
 .library__content__button button:not(:hover),
-.legal-info button:not(:hover)
-{
+.legal-info button:not(:hover) {
   transform: scale(100%);
   transition: all, 1s, ease-out, 0.5s;
 }
 
-.legal-info
-{
+.legal-info {
   padding: 1.5rem 1rem 0.75rem 1rem;
 }
 
-.legal-info li a
-{
+.legal-info li a {
   font-size: 11px;
   color: var(--text-color-subbase);
   margin-right: 10px;
   line-height: 1rem;
 }
 
-.legal-info__list
-{
+.legal-info__list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.legal-info button
-{
+.legal-info button {
   color: var(--text-color-base);
   font-family: var(--font-family);
   font-weight: var(--font-bold);
@@ -126,7 +111,6 @@
   cursor: pointer;
 }
 
-.legal-info button:hover
-{
+.legal-info button:hover {
   border-color: var(--text-color-base);
 }
