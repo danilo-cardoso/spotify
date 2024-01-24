@@ -1,0 +1,31 @@
+.main-container {
+  position: fixed;
+  top: 4.5rem;
+  right: 0.5rem;
+  bottom: 6rem;
+  left: 20rem;
+  background-color: var(--bg-color-subbase);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 1.5rem;
+}
+
+.main__heading {
+  padding: 1rem 0;
+}
+
+.main__title,
+.main__subtitle {
+  font-weight: var(--font-bold);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+.main__cards {
+  overflow-y: auto;
+  height: 90%;
+}
+
+.main__cards::-webkit-scrollbar {
+  display: none;
+}
