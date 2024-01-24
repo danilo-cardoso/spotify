@@ -1,9 +1,13 @@
 .main__navigation {
+  position: fixed;
+  right: 0.5rem;
+  top: 0.5rem;
+  left: 20rem;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
   background-color: var(--bg-color-underbase);
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .navigation__buttons {
@@ -37,6 +41,7 @@
   align-items: center;
   padding: .6rem 2rem;
   background-color: var(--bg-color-subbase);
+  border:  2px solid var(--bg-color-subbase);
   border-radius: 9999px;
   width: 45%;
   min-width: 15rem;
@@ -50,11 +55,15 @@
 .navigation__search input {
   background-color: transparent;
   border: none;
-  min-width: 70%;
+  width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   outline: none;
+}
+
+.navigation__search:has(input:focus) {
+  border: 2px solid var(--text-color-base);
 }
 
 .navigation__search input::placeholder {
