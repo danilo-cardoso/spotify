@@ -43,3 +43,63 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* Reset CSS */
+
+/* Remove a margem padrão e o preenchimento */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Define a cor do texto como preto */
+body {
+  color: #000;
+}
+
+/* Define a fonte e o tamanho do texto */
+body, input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Remove a decoração de link padrão */
+a {
+  text-decoration: none;
+}
+
+/* Remove os pontos de lista */
+ul, ol {
+  list-style: none;
+}
+
+/* Define a largura e altura das imagens como auto */
+img {
+  width: auto;
+  height: auto;
+}
+
+/* Define a exibição de elementos de mídia incorporados como blocos */
+embed, iframe, object, video {
+  display: block;
+}
+
+/* Define a largura máxima de elementos de mídia incorporados como 100% */
+embed, iframe, object, video {
+  max-width: 100%;
+}
+
+/* Define a largura máxima de imagens como 100% */
+img {
+  max-width: 100%;
+}
+
+/* Remove a borda padrão de elementos focáveis */
+button, input, select, textarea {
+  outline: none;
+  border: none;
+}
+
+/* Define o box-sizing como border-box para todos os elementos */
+* {
+  box-sizing: border-box;
+}

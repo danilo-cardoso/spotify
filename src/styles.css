@@ -4,16 +4,22 @@
 :root {
   /* Variáveis de background */
   --bg-color: #2d3250;
+  --bg-color-underbase: #313657;
   --bg-color-base: #424769;
   --bg-color-subbase: #7077a1;
 
   /* Variáveis de cor, fonte e peso do texto */
   --text-color-base: #f6b17a;
   --text-color-subbase: #f5c39f;
+  --text-color-placeholder: #424769;
   --font-family: "Comfortaa", sans-serif;
   --font-bold: 700;
   --font-medium: 500;
   --font-regular: 400;
+
+  /* Filtros de cor para os PNGs */
+  --filter-color-base: brightness(0) saturate(100%) invert(75%) sepia(7%) saturate(3025%) hue-rotate(334deg) brightness(104%) contrast(93%);
+  --filter-color-dull: brightness(0) saturate(100%) invert(86%) sepia(4%) saturate(4792%) hue-rotate(321deg) brightness(103%) contrast(93%);
 }
 
 body {
