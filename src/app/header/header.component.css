@@ -23,8 +23,7 @@
 .navbar__img {
   width: 4.875rem;
   height: 1.5rem;
-  filter: brightness(0) saturate(100%) invert(96%) sepia(91%) saturate(6659%)
-    hue-rotate(302deg) brightness(95%) contrast(103%);
+  filter: var(--filter-color-base);
 }
 
 .navbar__list__item {
