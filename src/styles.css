@@ -2,19 +2,26 @@
 @import url(./reset.css);
 
 :root {
+  /* Variáveis de background */
   --bg-color: #2d3250;
   --bg-color-base: #424769;
   --bg-color-subbase: #7077a1;
+
+  /* Variáveis de cor, fonte e peso do texto */
   --text-color-base: #f6b17a;
   --text-color-subbase: #f5c39f;
   --font-family: "Comfortaa", sans-serif;
   --font-bold: 700;
   --font-medium: 500;
   --font-regular: 400;
+}
 
+body {
   font-family: var(--font-family);
   font-weight: var(--font-regular);
 }
+
+/* Classes auxiliares para cor de texto e peso padrão */
 
 .text-base {
   color: var(--text-color-base);
