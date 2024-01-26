@@ -8,7 +8,7 @@
     </button>
     <div class="navigation__search">
       <img src="../../assets/icons/search.png" alt="">
-      <input id="search-input" type="text" placeholder="O que você quer ouvir?" maxlength="800">
+      <input id="search-input" class="filtroBusca" type="search" placeholder="O que você quer ouvir?" maxlength="800" [(ngModel)]="filtroBusca" (keyup)="buscarArtista()">
     </div>
   </div>
   <div class="navigation__login">
@@ -26,8 +26,13 @@
         Navegar por todas as seções
       </h3>
     </div>
-    <section class="main__cards">
-        <app-card  *ngFor="let card of cardList" [card]="card" [style.background-color]="card.color" ></app-card>
+    <section class="main__cards" *ngIf="artistList.length <= 0; else resultadosBusca">
+        <app-card *ngFor="let card of cardList" [card]="card" [style.background-color]="card.color" ></app-card>
     </section>
   </section>
 </div>
+<ng-template #resultadosBusca>
+  <section class="main__artists">
+    <app-artist-cards *ngFor="let artist of artistList" [artist]="artist"></app-artist-cards>
+  </section>
+</ng-template>

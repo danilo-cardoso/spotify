@@ -159,3 +159,13 @@ app-card {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+
+.main__artists {
+  height: 90%;
+  display: flex;
+  gap: 1.5rem;
+}
+
+artist-cards {
+  position: relative;
+}
