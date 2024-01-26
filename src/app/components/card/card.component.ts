@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CardInterface } from 'src/app/interfaces/card-interface';
+import { CardRouteServiceService } from 'src/app/services/card-route-service.service';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
+  @Input() card: CardInterface = {
+    id: 0,
+    title: '',
+    img: '',
+    color: '',
+  }
+
+  constructor(private service: CardRouteServiceService) { }
 
 }

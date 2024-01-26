@@ -19,13 +19,25 @@
   font-size: 1.5rem;
   line-height: 1.5rem;
   padding-bottom: .5rem;
+  color: var(--bg-color);
 }
 
 .main__cards {
   overflow-y: auto;
   height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0 0.25rem;
 }
 
 .main__cards::-webkit-scrollbar {
   display: none;
+}
+
+app-card {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }

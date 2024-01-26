@@ -1,0 +1,94 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "title": "Podcasts",
+      "color": "#004664",
+      "img": "../../../assets/playlist/6.jpeg"
+    },
+    {
+      "id": 1,
+      "title": "Feitos para você",
+      "color": "#6D25DA",
+      "img": "../../../assets/playlist/2.png"
+    },
+    {
+      "id": 2,
+      "title": "Lançamentos",
+      "color": "#8528B0",
+      "img": "../../../assets/playlist/3.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Sertanejo",
+      "color": "#00641E",
+      "img": "../../../assets/playlist/7.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Creators",
+      "color": "#B04128",
+      "img": "../../../assets/playlist/4.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Funk",
+      "color": "#DA4554",
+      "img": "../../../assets/playlist/9.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Hip hop",
+      "color": "#503750",
+      "img": "../../../assets/playlist/12.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Em alta",
+      "color": "#b02897",
+      "img": "../../../assets/playlist/1.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Samba e pagode",
+      "color": "#006450",
+      "img": "../../../assets/playlist/8.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "MPB",
+      "color": "#004664",
+      "img": "../../../assets/playlist/10.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "Rock",
+      "color": "#B02853",
+      "img": "../../../assets/playlist/11.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "Indie",
+      "color": "#2593DA",
+      "img": "../../../assets/playlist/13.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "Para Treinar",
+      "color": "#DAC725",
+      "img": "../../../assets/playlist/5.jpeg"
+    },
+    {
+      "id": 13,
+      "title": "Relax",
+      "color": "#6D25DA",
+      "img": "../../../assets/playlist/14.jpeg"
+    },
+    {
+      "id": 14,
+      "title": "Música latina",
+      "color": "#B02897",
+      "img": "../../../assets/playlist/15.jpeg"
+    }
+  ]
+}

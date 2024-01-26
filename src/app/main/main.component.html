@@ -3,14 +3,14 @@
   <section class="main-container">
     <div class="main__heading">
       <h2 class="main__title">
-        Bom dia
+        Bom dia!
       </h2>
       <h3 class="main__subtitle">
         Navegar por todas as seções
       </h3>
     </div>
     <section class="main__cards">
-      <app-card></app-card>
+        <app-card  *ngFor="let card of cardList" [card]="card" [style.background-color]="card.color" ></app-card>
     </section>
   </section>
 </div>

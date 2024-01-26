@@ -1,0 +1,18 @@
+.card-container {
+  width: 100%;
+  height: 100%;
+}
+
+.card-container__title {
+  padding: 1rem 0 0 1rem;
+  font-weight: var(--font-bold);
+  color: #fff;
+}
+
+.card-container__img {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  margin: 6.5rem 0 0 8.5rem;
+  transform: rotate(25deg);
+}

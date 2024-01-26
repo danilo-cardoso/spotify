@@ -2,12 +2,4 @@
   padding: 0.5rem;
   background-color: var(--bg-color);
   height: 100vh;
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: 19rem 2fr;
-  grid-template-rows: auto 1fr auto;
-}
-
-app-main {
-  grid-area: 1/2/3/4;
 }
