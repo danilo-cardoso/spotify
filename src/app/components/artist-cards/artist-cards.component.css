@@ -1,0 +1,61 @@
+.artist {
+  position: relative;
+  display: flex;
+  gap: .8rem;
+  flex-direction: column;
+  background-color: var(--bg-color-underbase);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 12.2rem;
+  height: 17rem;
+}
+
+.artist__profile {
+  border-radius: 50%;
+}
+
+.artist__img i {
+  padding: .8rem .86rem .85rem 1rem;
+  border-radius: 50%;
+  background-color: var(--text-color-base);
+  color: var(--bg-color-underbase);
+  position: relative;
+  bottom: 5%;
+  left: 65%;
+  transition: all ease .3s;
+  opacity: 0;
+}
+
+.artist:hover > .artist__img i {
+  transform: translateY(-90%);
+  opacity: 1;
+}
+
+.artist:hover {
+  background-color: var(--bg-color-base);
+}
+
+.artist__img span:hover > i {
+  padding: .90rem .91rem .90rem 1.1rem;
+}
+
+.artist__content {
+  position: relative;
+  bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.artist__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
+  color: var(--text-color-base);
+  font-weight: var(--font-bold);
+}
+
+.artist__subtitle {
+  font-size: 0.875rem;
+  color: var(--text-color-subbase);
+}
