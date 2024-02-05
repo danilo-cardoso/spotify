@@ -6,21 +6,20 @@ import { Artists } from '../interfaces/artists';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class CardRouteServiceService {
-
+export class CardRouteService {
   private readonly cardsJson: Array<CardInterface> = cardJson.cards;
-  private readonly  API = 'http://localhost:3000/artists';
+  private readonly API = 'http://localhost:3000/artists';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  listar(): Array<CardInterface>  {
+  listar(): CardInterface[] {
     return this.cardsJson;
   }
 
   buscar(filter: string): Observable<Artists[]> {
-    const params = new HttpParams().set("q", filter);
+    const params = new HttpParams().set('q', filter);
 
     return this.http.get<Artists[]>(this.API, { params });
   }
