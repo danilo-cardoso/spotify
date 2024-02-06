@@ -9,7 +9,7 @@ import { CardRouteService } from '../../services/card-route.service';
 })
 export class MainComponent implements OnInit {
   cardList: Array<CardInterface> = [];
-  artistList: Array<Artists> = [];
+  artistList: Artists[] = [];
   filtroBusca = '';
 
   constructor(private service: CardRouteService) {}
@@ -19,10 +19,8 @@ export class MainComponent implements OnInit {
   }
 
   buscarArtista(): void {
-    if (this.filtroBusca.trim().length > 2) {
-      this.service.buscar(this.filtroBusca).subscribe((listaArtistas) => {
-        this.artistList = listaArtistas;
-      });
-    }
+    this.service.buscar(this.filtroBusca).subscribe((listaArtistas) => {
+      this.artistList = listaArtistas;
+    });
   }
 }
