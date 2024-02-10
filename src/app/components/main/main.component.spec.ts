@@ -6,8 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { CardComponent } from '../card/card.component';
 import { CardRouteService } from 'src/app/services/card-route.service';
 import { ArtistCardsComponent } from '../artist-cards/artist-cards.component';
-import { Artists } from 'src/app/interfaces/artists';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
 describe('MainComponent', () => {
   let component: MainComponent;
